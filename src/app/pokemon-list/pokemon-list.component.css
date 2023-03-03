@@ -1,11 +1,8 @@
-.container img {
-  height: 250px;
-  width: 250px;
-  /* margin: 2px -93px -2px 61px;*/
-}
 
-b {
-  margin: 0px 0px 0px -176px
+.pokemon-list {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
 }
-
 
