@@ -1,4 +1,20 @@
- .logo{
-  width: 40px;
-  height: 40px;
+
+
+ #logo{
+  width: 144px;
+  margin-right: 4px;
  }
+
+ input.form-control.me-2 {
+  width: 400px;
+}
+
+.container-fluid {
+  margin: -11px 10px -11px 10px;
+}
+
+ nav.navbar.bg-body-tertiary {
+  width: 100%!important;
+  background-color: #70c0d1!important;
+}
+

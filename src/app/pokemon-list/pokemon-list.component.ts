@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { PokemonService } from '../Service/pokemon.service';
 
 @Component({
   selector: 'app-pokemon-list',
@@ -6,6 +7,7 @@ import { Component } from '@angular/core';
   styleUrls: ['./pokemon-list.component.css']
 })
 export class PokemonListComponent {
+
   pokemons = [
     'Bulbasaur', 'Ivysaur', 'Venusaur', 'Charmander', 'Charmeleon', 'Charizard', 'Squirtle', 'Wartortle',
     'Blastoise', 'Caterpie', 'Metapod', 'Butterfree', 'Weedle', 'Kakuna', 'Beedrill', 'Pidgey', 'Pidgeotto',
@@ -23,4 +25,18 @@ export class PokemonListComponent {
     'Ditto', 'Eevee', 'Vaporeon', 'Jolteon', 'Flareon', 'Porygon', 'Omanyte', 'Omastar', 'Kabuto', 'Kabutops',
     'Aerodactyl', 'Snorlax', 'Articuno', 'Zapdos', 'Moltres', 'Dratini', 'Dragonair', 'Dragonite', 'Mewtwo', 'Mew'
   ];
+
+  // pokemon = [];
+  public search!: string
+
+
+  constructor( public pokemonService: PokemonService){}
+
+  ngOnInit(){
+    this.pokemonService.carregarPokemons().then();
+
+  }
+
+
+
 }
